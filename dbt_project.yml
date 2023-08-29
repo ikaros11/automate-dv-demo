@@ -50,6 +50,7 @@ models:
         +tags:
           - 't_link'
     star_schema:
-      +materialized: incremental
-      +tag:
-          - 'silver_layer'
+      +materialized: view
+      +tags:
+        - 'stage'
+      +enabled: true
