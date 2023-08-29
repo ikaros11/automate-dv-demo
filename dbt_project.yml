@@ -50,7 +50,6 @@ models:
         +tags:
           - 't_link'
     star_schema:
-      +materialized: view
+      +materialized: table
       +tags:
-        - 'stage'
-      +enabled: true
+        - 'star_schema'
