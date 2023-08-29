@@ -49,3 +49,7 @@ models:
       t_links:
         +tags:
           - 't_link'
+    star_schema:
+      +materialized: incremental
+      +tag:
+          - 'silver_layer'
