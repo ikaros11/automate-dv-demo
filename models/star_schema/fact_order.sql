@@ -19,3 +19,4 @@ SELECT lin.lineitem_pk
 	INNER JOIN dw.hub_order enc ON enc.order_pk = link_lin.order_pk
 	INNER JOIN dw.sat_order_order_details enc_det ON enc_det.order_pk = enc.order_pk
 	INNER JOIN dw.sat_order_lineitem_details lin_det ON lin_det.lineitem_pk = lin.lineitem_pk
+	
